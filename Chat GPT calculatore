@@ -1,0 +1,32 @@
+//create a calculator
+
+function Calculator() {
+  this.result = 0;
+
+  this.add = function(number1, number2) {
+    this.result = number1 + number2;
+    return this.result;
+  };
+
+  this.subtract = function(number1, number2) {
+    this.result = number1 - number2;
+    return this.result;
+  };
+
+  this.multiply = function(number1, number2) {
+    this.result = number1 * number2;
+    return this.result;
+  };
+
+  this.divide = function(number1, number2) {
+    this.result = number1 / number2;
+    return this.result;
+  };
+
+  this.clear = function() {
+    this.result = 0;
+    return this.result;
+  };
+}
+
+const calculator = new Calculator();
